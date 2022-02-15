@@ -13,3 +13,6 @@ Pi created CAD files for the physical model of the bee house, I added the capaci
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/beehouse_cutawaywcaps.png?raw=true" style="height: 100px"/>
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/beehouseiso_tube%20out_proposal.png?raw=true" style="height:200px"/>
 
+2/15/2022
+Met with Amr (TA) to discuss weekly progress. Determined that metal balls were not suitable for the demo, and plastic or other insulating materials should be used. Recommended to test different materials to see what produces the most change in capacitance. 
+

@@ -5,4 +5,11 @@ Of course, a higher dielectric constant will lead to higher capacitance/ a highe
 
 Some research was conducted into finding the dielectric constant of the western honey bees. This research is linked here: [insert link]
 Mason bees are roughly the same size as western honeybees and are of similar mass as well. So for our project, we will estimate that a mason bee's body will have a 
-dielectric constant of [--------], and can be approximated by a sphere of radius [--------------].
+dielectric constant between 10.32[2] and 10.64 [1].
+
+
+**a note on the research at Penn State: their methods were also tested on 12-inch diameter conductive spheres, similar to what we intend for our demo.
+
+References:
+[1] Alzaabi, O. (2019). Airborne Insect Radar Scattering Characterization Using Electromagnetic Modeling (dissertation). 
+[2] Alzaabi, O., Lanagan, M., Breakall, J., &amp; Urbina, J. (2019). Dielectric Properties of Honey Bee Body Tissue for Insect Tracking Applications. 

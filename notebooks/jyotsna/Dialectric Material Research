@@ -1,15 +1,31 @@
 This file contains a comparison of different materials and their constants. 
 The balls we use to simulate bees in our demo will be made of the material that most closely remsembles the dielectric constant a mason bee could be measured at in the wild, and 
 will take the place of a live bee in our demo .
-Of course, a higher dielectric constant will lead to higher capacitance/ a higher change in capacitance.
+A higher dielectric constant will lead to higher capacitance/ a higher change in capacitance.
 
-Some research was conducted into finding the dielectric constant of the western honey bees. This research is linked here: [insert link]
+Some research was conducted into finding the dielectric constant of the western honey bees. [Refer to source #1 ].
 Mason bees are roughly the same size as western honeybees and are of similar mass as well. So for our project, we will estimate that a mason bee's body will have a 
 dielectric constant between 10.32[2] and 10.64 [1].
 
+For our demo, we will aim to have spheres that have a radius of 6mm. We require the spheres to be conductive, as bees are made of mostly water, like humans.  
 
-**a note on the research at Penn State: their methods were also tested on 12-inch diameter conductive spheres, similar to what we intend for our demo.
+Material      Conductive          Dielectric Constants [3]
+Glass            Yes                       min: 3.8 max: 14.5
+Steel            Yes                       infinite , as net electric field inside a metal material is zero
+Epoxy Resin      No                        min: 3.4 , max: 3.7
+Mica             No                        min: 4, max: 9
+Slate            No                        min: 7, max: 7
+Porcelain        No                        min: 5, max: 6.5
+
+
+Based on these findings above, we think glass will most closely simulate the presence of a mason bee for our demo purposes.
+
+
+
+**a note on the research at Penn State: their methods were tested on 12-inch diameter conductive spheres, similar in concept to what we intend for our demo.
 
 References:
 [1] Alzaabi, O. (2019). Airborne Insect Radar Scattering Characterization Using Electromagnetic Modeling (dissertation). 
 [2] Alzaabi, O., Lanagan, M., Breakall, J., &amp; Urbina, J. (2019). Dielectric Properties of Honey Bee Body Tissue for Insect Tracking Applications. 
+[3] https://courses.physics.illinois.edu/phys435/sp2010/Lecture_Notes/Dielectric_Constants.pdf
+

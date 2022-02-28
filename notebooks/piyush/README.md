@@ -14,3 +14,7 @@ I did the circuit analysis for the first two parts of the circuit (AC bridge and
 2/19/2022
 
 We built a circuit for prototyping a very basic version of the capacitance detector on a breadboard.
+
+2/26/2022
+
+I prototyped a voltage summer circuit on a breadboard to add a DC offset to the output voltage to ensure that it is in a range that is readable by the microcontroller, since the output voltage can be negative and the microcontroller only reads voltages between 0.5 and 5V. The experiment was unsuccessful because the sum of the two voltages did not match what the voltage summer outputted. I will debug some more in office hours later.

@@ -46,6 +46,17 @@ The data we collected is as follows:
 
 We also noticed that the output  voltage of the oscilloscope was not stable, sometimes the waveform was interrupted by a large spike. These spikes varied in height and occurred infrequently and unpredictably.
 
+## 2/21/2022
+Today my group did our design document check where we got feedback on our design document graph from Porfessor Victoria Shao, our TA Amr, another TA David Null, and another TA. The feedback we received included:
+* making the block diagram more clear by providing details on the different arrows
+* looking into off the shelf chips for the capacitance sensor circuitry
+* looking into copper tape rather than copper tubing for the sensor itself
+* considering removing the processor and doing all the data analysis and storage from the ATMEGA
+* making sure the wires from the sensor to everything else are as short as possible
+* specifying how much data we expected to store on the SD card
+* adding some sort of warning to the outside of the mason bee house if it is suspected to have a parasite or other issue
+* making sure each capacitor pair has its own amplifier
+
 ## 2/22/2022
 Following the above procedure I collected data another time, with an even lower change in capacitance. Data collected is shown below.
 
@@ -60,3 +71,19 @@ Following the above procedure I collected data another time, with an even lower 
 |         4         |             0.5            |           265           |            436            |
 |         5         |             0.5            |           340           |            540            |
 |         6         |             0.5            |           470           |            649            |
+
+ Also today, I met with Amr along with my teammates. We discussed that the irregular behavior from the prototype circuit could be from the open circuit that is introduced because of the switch. He recommended that we construct a circuit and switch out capacitors betweent aking measurements, to make the prototyping tes tmore accurate to the intended use case. He also recommended adding a graph that showed change in capacitance vs output voltage for a fixed input voltage, along with the input voltage versus change in output voltage graph I made earlier in the day. He also advised that we could write to an SD card fromt eh ATMEGA directly, using instructions from the 445 website wiki. We also discussed some of the feedback we got from the design document review, including whether to create a companion desktop app for our device (conclusion was probably not but we could take a look again once it got to that stage), reducing the tunnnels in our project (he said it would be ok to do 2 instead of 4), and we went over feedback from our proposal so that we could improve the writing and report for our design document.
+
+## 2/25/2022
+I met with Jyotsna to do research on producing the necessary waveforms to drive the capacitance circuitry from the ATMEGA. Jyotsna looked into producing a square wave of 5V and 33kHz from the ATMEGA while I looked at what would be necessary to turn that into a sinusoidal wave. I found that an RC filter should work for this purpose as long as the time constant fit our desired frequency. A 3 stage filter (3 RC pairs) were recommended as "enough" to round out the square into a sinusoidal shape, with 4.7 nF capacitors and 100k Ohm resistors.
+
+## 2/26/2022
+I went into lab to test out the RC filter design along with the changes to the prototyping circuit. I found that 3 RC pairs created a waveform that looked like a triangle wave on the oscilloscope, so I added a fourth RC pair which resulted in a sinusoidal shape. However, with 4 resistors and 4 capacitors, the amplitude of the waveform was reduced to 1.25 V. Thus, I concluded that a passive filter on the ATMEGA- generated square wave would not be sufficient for our purposes of driving the AC bridge, and we should look into an off-the-shelf waveform generator part.
+
+I also tested the modified AC bridge circuit and found unexpected behavior. Even after using a balanced (equal) capacitance on both arms of the AC bridge, the circuit outputted 5V constant. At this point I double checked the wiring, found no flaws, and tabled the issue for later. Piyush Sud was also in the lab and checked the circuit.
+
+## 2/27/2022
+I went into lab to test the prototyping circuit again, along with my teammate Jyotsna Joshi. Found the same behavior. Re-wired it on a different breadboard and again found the same behavior. Checked whether it responded to an unbalanced bridge (0.5 pF on one arm and 10/11 pF on the other arm) and found the same result: a 5V constant output from the op-amp. At this point we decided that we needed support from a TA, so we emailed Amr.
+
+## 2/28/2022
+Today we had our design document peer review. Professor Victoria Shao and our TA Amr were in attendanc along with 3 students from the class. They had no feedback on the design but had some feedback on the placement of figures within the report. 

@@ -87,3 +87,16 @@ I went into lab to test the prototyping circuit again, along with my teammate Jy
 
 ## 2/28/2022
 Today we had our design document peer review. Professor Victoria Shao and our TA Amr were in attendanc along with 3 students from the class. They had no feedback on the design but had some feedback on the placement of figures within the report. 
+
+## 3/1/2022
+Met with Amr for weekly meeting. Got feedback on: ways to test prototype circuit to determine caue of fixed 5V output, PCB design administrative details, different options to generate the sinusoid wave (active filter), summing amplifier prototype could have a gain of 2 which could cause the unexpected output, and some feedback about our design doc.
+
+We also attended the PCB review meeting and spoke to Dean about our plan for the PCB. He gave advice including
+* ok to use headers to change connections within PCB
+* can do multiple boards as long as they are under size requirement
+* make sure to use silkscreen labeling as much as possible
+* testing points are an exposed pad
+* consider using an external oscillator
+* break out extra pins
+* consider other microcontrollers, check SRAM memory for ATMEGA 328 to check it meets your requirements
+* pick QFP parts with pads sticking out, not BGA or QFA with pads that look like bites out of the chip

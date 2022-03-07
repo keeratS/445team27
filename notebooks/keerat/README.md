@@ -115,4 +115,4 @@ Took measurements with behavior of instrumentation amplifier constructed using 3
 |   2   | 2.05 |      4.281     |
 |   2   | 2.04 |      4.135     |
 
-<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height: 100px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height: 400px"/>

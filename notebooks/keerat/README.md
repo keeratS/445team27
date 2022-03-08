@@ -116,3 +116,8 @@ Took measurements with behavior of instrumentation amplifier constructed using 3
 |   2   | 2.04 |      4.135     |
 
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height: 400px"/>
+
+## 3/6/2022
+Investigated MAX038 chip from Electronic Services Shop to determine if it would be ok for our use case. Concluded tha tit should be fine if we are able to amplify the output from 1v amplitude to 5v amplitude. Still need to determine the exact resistor and capactior to set the frequqncy to 33kHz but all other pin connections have been determined.
+
+PCB Design: Realized that previous planning had not accounted for the need for one demodulator for each capacitor pair. Adjusted plans to take 3 pairs per tube into account.

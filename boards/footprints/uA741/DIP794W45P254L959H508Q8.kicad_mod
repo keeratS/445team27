@@ -1,5 +1,5 @@
 
-(module DIP794W45P254L959H508Q8 (layer F.Cu) (tedit 6225B80A)
+(module DIP794W45P254L959H508Q8 (layer F.Cu) (tedit 6226BC60)
   (descr "")
   (fp_text reference REF** (at -0.565 -5.607 0) (layer F.SilkS)
     (effects (font (size 1.0 1.0) (thickness 0.15)))

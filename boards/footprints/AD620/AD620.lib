@@ -1,0 +1,42 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2016 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# AD620
+#
+DEF AD620 IC 0 40 Y Y 1 L N
+F0 "IC" 350 250 50 H V L BNN
+F1 "AD620" 350 -300 50 H V L BNN
+F3 "" 0 0 50 H I L BNN
+F4 "05F7108" 0 0 50 H I L BNN "OC_NEWARK"
+F5 "ALTERA CORPORATION" 0 0 50 H I L BNN "MF"
+F6 "AD620AN" 0 0 50 H I L BNN "MPN"
+F7 "1523782" 0 0 50 H I L BNN "OC_FARNELL"
+$FPLIST
+ SO8
+ DIL08
+$ENDFPLIST
+DRAW
+P 2 0 0 10 -200 600 -200 -600 N
+P 2 0 0 10 -200 -600 400 0 N
+P 2 0 0 10 400 0 -200 600 N
+T 0 -60 300 50 0 0 0 +V Normal 0 L B
+T 0 -40 -360 50 0 0 0 -V Normal 0 L B
+T 0 -170 180 60 0 0 0 RG Normal 0 L B
+T 0 -170 -220 60 0 0 0 RG Normal 0 L B
+S -150 380 -140 429 0 0 0 F
+S -170 400 -120 409 0 0 0 F
+S -170 -400 -120 -390 0 0 0 F
+X ~ 3 -300 400 100 R 40 40 0 0 I 
+X ~ 2 -300 -400 100 R 40 40 0 0 I 
+X ~ 4 0 -600 200 U 40 40 0 0 W 
+X ~ 7 0 600 200 D 40 40 0 0 W 
+X ~ 6 500 0 100 L 40 40 0 0 O 
+X ~ 1 -300 200 100 R 40 40 0 0 P 
+X ~ 8 -300 -200 100 R 40 40 0 0 P 
+X REF 5 200 -400 200 U 40 40 0 0 P 
+ENDDRAW
+ENDDEF
+#
+# End Library

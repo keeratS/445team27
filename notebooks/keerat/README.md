@@ -89,7 +89,7 @@ I went into lab to test the prototyping circuit again, along with my teammate Jy
 Today we had our design document peer review. Professor Victoria Shao and our TA Amr were in attendanc along with 3 students from the class. They had no feedback on the design but had some feedback on the placement of figures within the report. 
 
 ## 3/1/2022
-Met with Amr for weekly meeting. Got feedback on: ways to test prototype circuit to determine caue of fixed 5V output, PCB design administrative details, different options to generate the sinusoid wave (active filter), summing amplifier prototype could have a gain of 2 which could cause the unexpected output, and some feedback about our design doc.
+Met with Amr for weekly meeting. Got feedback on: ways to test prototype circuit to determine cause of fixed 5V output, PCB design administrative details, different options to generate the sinusoid wave (active filter), summing amplifier prototype could have a gain of 2 which could cause the unexpected output, and some feedback about our design doc.
 
 We also attended the PCB review meeting and spoke to Dean about our plan for the PCB. He gave advice including
 * ok to use headers to change connections within PCB
@@ -100,3 +100,24 @@ We also attended the PCB review meeting and spoke to Dean about our plan for the
 * break out extra pins
 * consider other microcontrollers, check SRAM memory for ATMEGA 328 to check it meets your requirements
 * pick QFP parts with pads sticking out, not BGA or QFA with pads that look like bites out of the chip
+
+Lab Work:
+Took measurements with behavior of instrumentation amplifier constructed using 3 op amps. Data collected is shown below:
+| V1    | V2   | Output voltage |
+|-------|------|----------------|
+|   2   |   2  |      2.32      |
+|   2   | 2.01 |      2.755     |
+|  2.01 |   2  |      1.87      |
+| 2.001 | 2.00 |      2.175     |
+|  2.1  |   2  |      1.81      |
+|   2   |  2.1 |      4.28      |
+|   2   |  2.5 |      4.28      |
+|   2   | 2.05 |      4.281     |
+|   2   | 2.04 |      4.135     |
+
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height: 400px"/>
+
+## 3/6/2022
+Investigated MAX038 chip from Electronic Services Shop to determine if it would be ok for our use case. Concluded tha tit should be fine if we are able to amplify the output from 1v amplitude to 5v amplitude. Still need to determine the exact resistor and capactior to set the frequqncy to 33kHz but all other pin connections have been determined.
+
+PCB Design: Realized that previous planning had not accounted for the need for one demodulator for each capacitor pair. Adjusted plans to take 3 pairs per tube into account.

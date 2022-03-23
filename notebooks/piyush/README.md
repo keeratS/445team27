@@ -26,3 +26,8 @@ Designed part of the PCB for the circuit. Designed the schematic and PCB for the
 balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked
 on the part of the PCB for the microcontroller and waveform generator.
 
+3/23/22
+
+Prototyped the balanced demodulator in the lab on a breadboard with just a sine waveform (instead of a DC signal modulated with a sine). 
+The output should be a rectified sine wave, but instead I got two sine waves, one offset from the other by a phase of around 100 degrees. Not sure why.
+

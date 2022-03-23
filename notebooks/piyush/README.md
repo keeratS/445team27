@@ -23,10 +23,6 @@ that is readable by the microcontroller, since the output voltage can be negativ
 3/8/22
 
 Designed part of the PCB for the circuit. Designed the schematic and PCB for the AC bridge circuit, instrumentation amplifier,
-<<<<<<< HEAD
-balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked 
-on the part of the PCB for the microcontroller and waveform generator.
-=======
 balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked
 on the part of the PCB for the microcontroller and waveform generator.
->>>>>>> 96602b848aa9af40e8ceca1d65fef81376701034
+

@@ -1,6 +1,6 @@
 2/8/2022
 
-Talked to machine shop about physical design of the bee house, including dimensions, number of tubes and where they would go. 
+Talked to machine shop about physical design of the bee house, including dimensions, number of tubes and where they would go.
 We decided we would use 8 mm id tubes, and 4 tubes vertically stacked. We were told to come back once we knew what specific materials we wanted.
 
 2/10/2022
@@ -23,5 +23,6 @@ that is readable by the microcontroller, since the output voltage can be negativ
 3/8/22
 
 Designed part of the PCB for the circuit. Designed the schematic and PCB for the AC bridge circuit, instrumentation amplifier,
-balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked 
+balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked
 on the part of the PCB for the microcontroller and waveform generator.
+

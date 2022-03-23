@@ -1,4 +1,5 @@
 (kicad_pcb (version 20211014) (generator pcbnew)
+<<<<<<< HEAD
 
   (general
     (thickness 1.6)
@@ -10054,3 +10055,6 @@
     )
   )
 )
+=======
+)
+>>>>>>> de29d988fb80995d45c2cc76aa4c5306845b4fd0

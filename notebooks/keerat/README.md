@@ -132,3 +132,6 @@ Jyotsna and I went into lab to test the behavior of the capacitance sensor syste
 |    smallest champagne bead (estimate 3mm)   |                       703 mV                      |                          725 mV                          |
 
 <img src="https://raw.githubusercontent.com/keeratS/445team27/ef045a0d1219dc02987ec9d1b732cdd7fe4ee6f2/notebooks/keerat/labbeadsamplitude.png?token=ADGDZJK2P65VWVQKV7RRJMDCHJVQC" style="height:200px"/>
+
+## 3/22/2022
+Had our weekly meeting with Amr today. We discussed the ATMEGA 328P purchasing issue and came to the conclusion to wait a week to see if we get tracking information and if not, we should find an alternate supplier. We also shared updates about work done over spring break, like the capacitance sensor subsystem testing.

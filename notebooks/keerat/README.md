@@ -106,19 +106,19 @@ Created graph from lab data collected on 3/1 to test behavior of the instrumenta
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height:200px"/>
 From the graph, we concluded that it has a linear gain relationship between certain input voltages, but that the gain was much smaller than we were hoping.
 
-##3/7/2022
+## 3/7/2022
 Jyotsna and I put together the PCB design for the board containing the microcontroller and waveform generator chips, with the understanding that it will be for prototyping and not for use in the final design of the bee house.
 
-##3/8/2022
+## 3/8/2022
 Had our weekly meeting with Amr today. He pointed out that the gain pictured on the graph was actually larger than we initially thought. Since we had the demodulator and instrumentation amplifier ICs delivered, we will pursue further testing using the instrumentation amplifier IC rather than the one constructed of 3 op amps. We also uploaded our boards for the PCB order.
 
-##3/18/2022
+## 3/18/2022
 Looked into ordering parts for the PCB and realized that the chip shortage is heavily impacting the availability of the ATMEGA328P we intend to use in our design. Jyotsna and I looked at alternative boards, but then I found a through-hole ATMEGA328P pre-loaded with a bootloader available in low stock on a website. We now plan to use that in our design.
 
-##3/19/2022
+## 3/19/2022
 Jyotsna and I went into lab to test the behavior of the instrumentation amplifier IC. We concluded that changing the input waveforms changes the output of the chip in a way that matches our expectations, so we will move on with the testing.
 
-##3/20/2022
+## 3/20/2022
 Jyotsna and I went into lab to test the behavior of the capacitance sensor system. This included the copper capacitance rings, the tube, the glass beads that simulate bees, and the instrumentation amplifier circuit. The data and graph of this testing are below.
 
 |                     bead                    | Output voltage waveform amplitude no bead in tube | Output voltage waveform amplitude bead between cap rings |

@@ -135,3 +135,6 @@ Jyotsna and I went into lab to test the behavior of the capacitance sensor syste
 
 ## 3/22/2022
 Had our weekly meeting with Amr today. We discussed the ATMEGA 328P purchasing issue and came to the conclusion to wait a week to see if we get tracking information and if not, we should find an alternate supplier. We also shared updates about work done over spring break, like the capacitance sensor subsystem testing.
+
+## 3/23/2022
+Piyush and I spent some time in lab confirming that our understanding of the demodulator was correct, and we found that it matched our expectations. Specifically, we set up a circuit with the demodulator and low-pass filters. I set up a waveform generator so that the demodulator received a 1kHz frequency wave modulated by a 10kHz frequency wave. The demodulator was able to extract the 1kHz frequency waveform when it was fed a 1kHz frequency reference signal. Further testing is required to adapt this behavior to the bee system.

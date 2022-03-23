@@ -103,7 +103,9 @@ We also attended the PCB review meeting and spoke to Dean about our plan for the
 
 ## 3/6/2022
 Created graph from lab data collected on 3/1 to test behavior of the instrumentation amplifier we created from 3 op-amps using the typical circuit design (referenced from the Wikipedia article on instrumentation amplifiers)
+
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height:200px"/>
+
 From the graph, we concluded that it has a linear gain relationship between certain input voltages, but that the gain was much smaller than we were hoping.
 
 ## 3/7/2022

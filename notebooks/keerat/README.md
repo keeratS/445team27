@@ -86,10 +86,10 @@ I also tested the modified AC bridge circuit and found unexpected behavior. Even
 I went into lab to test the prototyping circuit again, along with my teammate Jyotsna Joshi. Found the same behavior. Re-wired it on a different breadboard and again found the same behavior. Checked whether it responded to an unbalanced bridge (0.5 pF on one arm and 10/11 pF on the other arm) and found the same result: a 5V constant output from the op-amp. At this point we decided that we needed support from a TA, so we emailed Amr.
 
 ## 2/28/2022
-Today we had our design document peer review. Professor Victoria Shao and our TA Amr were in attendanc along with 3 students from the class. They had no feedback on the design but had some feedback on the placement of figures within the report. 
+Today we had our design document peer review. Professor Victoria Shao and our TA Amr were in attendanc along with 3 students from the class. They had no feedback on the design but had some feedback on the placement of figures within the report.
 
 ## 3/1/2022
-Met with Amr for weekly meeting. Got feedback on: ways to test prototype circuit to determine cause of fixed 5V output, PCB design administrative details, different options to generate the sinusoid wave (active filter), summing amplifier prototype could have a gain of 2 which could cause the unexpected output, and some feedback about our design doc.
+Met with Amr for weekly meeting. Got feedback on: ways to test prototype circuit to determine caue of fixed 5V output, PCB design administrative details, different options to generate the sinusoid wave (active filter), summing amplifier prototype could have a gain of 2 which could cause the unexpected output, and some feedback about our design doc.
 
 We also attended the PCB review meeting and spoke to Dean about our plan for the PCB. He gave advice including
 * ok to use headers to change connections within PCB
@@ -101,23 +101,32 @@ We also attended the PCB review meeting and spoke to Dean about our plan for the
 * consider other microcontrollers, check SRAM memory for ATMEGA 328 to check it meets your requirements
 * pick QFP parts with pads sticking out, not BGA or QFA with pads that look like bites out of the chip
 
-Lab Work:
-Took measurements with behavior of instrumentation amplifier constructed using 3 op amps. Data collected is shown below:
-| V1    | V2   | Output voltage |
-|-------|------|----------------|
-|   2   |   2  |      2.32      |
-|   2   | 2.01 |      2.755     |
-|  2.01 |   2  |      1.87      |
-| 2.001 | 2.00 |      2.175     |
-|  2.1  |   2  |      1.81      |
-|   2   |  2.1 |      4.28      |
-|   2   |  2.5 |      4.28      |
-|   2   | 2.05 |      4.281     |
-|   2   | 2.04 |      4.135     |
-
-<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height: 400px"/>
-
 ## 3/6/2022
-Investigated MAX038 chip from Electronic Services Shop to determine if it would be ok for our use case. Concluded tha tit should be fine if we are able to amplify the output from 1v amplitude to 5v amplitude. Still need to determine the exact resistor and capactior to set the frequqncy to 33kHz but all other pin connections have been determined.
+Created graph from lab data collected on 3/1 to test behavior of the instrumentation amplifier we created from 3 op-amps using the typical circuit design (referenced from the Wikipedia article on instrumentation amplifiers)
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/pythonplot_lab3-1.png?raw=true" style="height:200px"/>
+From the graph, we concluded that it has a linear gain relationship between certain input voltages, but that the gain was much smaller than we were hoping.
 
-PCB Design: Realized that previous planning had not accounted for the need for one demodulator for each capacitor pair. Adjusted plans to take 3 pairs per tube into account.
+##3/7/2022
+Jyotsna and I put together the PCB design for the board containing the microcontroller and waveform generator chips, with the understanding that it will be for prototyping and not for use in the final design of the bee house.
+
+##3/8/2022
+Had our weekly meeting with Amr today. He pointed out that the gain pictured on the graph was actually larger than we initially thought. Since we had the demodulator and instrumentation amplifier ICs delivered, we will pursue further testing using the instrumentation amplifier IC rather than the one constructed of 3 op amps. We also uploaded our boards for the PCB order.
+
+##3/18/2022
+Looked into ordering parts for the PCB and realized that the chip shortage is heavily impacting the availability of the ATMEGA328P we intend to use in our design. Jyotsna and I looked at alternative boards, but then I found a through-hole ATMEGA328P pre-loaded with a bootloader available in low stock on a website. We now plan to use that in our design.
+
+##3/19/2022
+Jyotsna and I went into lab to test the behavior of the instrumentation amplifier IC. We concluded that changing the input waveforms changes the output of the chip in a way that matches our expectations, so we will move on with the testing.
+
+##3/20/2022
+Jyotsna and I went into lab to test the behavior of the capacitance sensor system. This included the copper capacitance rings, the tube, the glass beads that simulate bees, and the instrumentation amplifier circuit. The data and graph of this testing are below.
+
+|                     bead                    | Output voltage waveform amplitude no bead in tube | Output voltage waveform amplitude bead between cap rings |
+|:-------------------------------------------:|---------------------------------------------------|----------------------------------------------------------|
+|           8mm gray synthetic opal           |                       703 mV                      |                          834 mV                          |
+|              8mm champagne bead             |                       702 mV                      |                          820 mV                          |
+|         6mm unbuffed synthetic opal         |                       701 mV                      |                          754 mV                          |
+| 2nd smallest champagne  bead (estimate 6mm) |                       704 mV                      |                          760 mV                          |
+|    smallest champagne bead (estimate 3mm)   |                       703 mV                      |                          725 mV                          |
+
+<img src="https://raw.githubusercontent.com/keeratS/445team27/ef045a0d1219dc02987ec9d1b732cdd7fe4ee6f2/notebooks/keerat/labbeadsamplitude.png?token=ADGDZJK2P65VWVQKV7RRJMDCHJVQC" style="height:200px"/>

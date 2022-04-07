@@ -31,3 +31,10 @@ on the part of the PCB for the microcontroller and waveform generator.
 Prototyped the balanced demodulator in the lab on a breadboard with just a sine waveform (instead of a DC signal modulated with a sine). 
 The output should be a rectified sine wave, but instead I got two sine waves, one offset from the other by a phase of around 100 degrees. Not sure why.
 
+3/28/22 - 3/29/22
+Designed PCB V2 for microcontroller board. Researched the difference between an oscillator and a crystal, figured out that ECS-100AX which 
+we had was an oscillator, not a crystal. Submitted gerber files to PCBway and it passed the audit.
+
+4/4/22
+Verified that I was able to program the atmega with an external oscillator.
+

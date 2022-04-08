@@ -1,0 +1,6 @@
+Lab Work Documentation
+
+April 8, 2022:
+Was in lab for about 1.5 hours; worked with Keerat on getting Atmega328 up and running on our laptops based on work Piyush had done. 
+Concluded that current system that was setup [ SD card is soldered to headers, and Atmega writes directly to SD Card] will not work for our long term use. 
+Decided instead that we would need an SD card reader, so that we may eject SD card from microcontroller board and insert into PCs. 

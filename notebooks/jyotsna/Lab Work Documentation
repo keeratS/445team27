@@ -4,3 +4,9 @@ April 8, 2022:
 Was in lab for about 1.5 hours; worked with Keerat on getting Atmega328 up and running on our laptops based on work Piyush had done. 
 Concluded that current system that was setup [ SD card is soldered to headers, and Atmega writes directly to SD Card] will not work for our long term use. 
 Decided instead that we would need an SD card reader, so that we may eject SD card from microcontroller board and insert into PCs. 
+
+April 10, 2022:
+Received the power supplies we had ordered, and tested the method we had learned from online [insert resource here] that
+allows us to get both positive and negative voltage for our application/ICs. Confirmed that we can +5 and - 5 out of the power supplies, 
+will test it this coming week on our actual circuit.
+

@@ -138,3 +138,27 @@ Had our weekly meeting with Amr today. We discussed the ATMEGA 328P purchasing i
 
 ## 3/23/2022
 Piyush and I spent some time in lab confirming that our understanding of the demodulator was correct, and we found that it matched our expectations. Specifically, we set up a circuit with the demodulator and low-pass filters. I set up a waveform generator so that the demodulator received a 1kHz frequency wave modulated by a 10kHz frequency wave. The demodulator was able to extract the 1kHz frequency waveform when it was fed a 1kHz frequency reference signal. Further testing is required to adapt this behavior to the bee system.
+
+## 3/27/2022
+Jyotsna and I met in lab to investigate the MAX 038 waveform generator chip. Early in reading the datasheet[5], we saw that the output waveform’s frequency is controlled by an external resistor and capacitor pair. So Jyotsna figured out the rest of the connections for the chip while I focused on deciding what resistor and capacitor to use for our purposes. Eventually, I calculated that the ideal capacitor would be 3030 pF, and the ideal resistor would be 50k. We tested in the lab with a 3300 pF capacitor and a 47k resistor and found the chip generated a waveform of around 31 kHz, which is close enough to 33kHz for our purposes. This measurement was done with the frequency measurement on the oscilloscope in the 445 lab. We noted that the output waveform was about 2V peak to peak, so we decided to use a 2x amplification with an op amp to make the higher amplitude waveform we needed. After this testing, we decided to move forward with the MAX 038 in our design, and had determined the circuit design necessary to include it in our project.
+
+## 3/28/2022
+After the previous tests, I went into lab again to use the output of the instrumentation amplifier as the input to the demodulator, after consulting the datasheet of the demodulator to confirm the necessary connections. After constructing this circuit, which is shown in Figure 8, Jyotsna joined me for the testing portion.
+
+In this test, Jyotsna and I held the tube horizontally using a clamp. We put glass beads in the tube at slow, medium, and fast speeds. We were measuring the output from the instrumentation amplifier (AD620) along with the demodulator (AD630), and found that we did get an asymmetric double pulse from the output of the demodulator, and that the direction of travel of the bead corresponded with the negative or positive orientation of this double pulse.
+Initially we were getting noisy readings, but we added a filter before the oscilloscope reading (consisting of 2 1kohm resistors and 1 microfarad capacitor) and found much better results, so we adjusted our circuit plans to include that.
+
+## 3/29/2022
+Worked on PCB design of microcontroller PCB with Pi. I determined connections necessary for using external oscillator by consulting ATMEGA datasheet. Jyotsna determined the necessary connections for integrating an SD card.
+
+## 4/7/2022
+Piyush and I met in lab and he showed me that he had a blink sketch running on the ATMEGA chip. I confirmed it did make the LED blink, and he described to me how he connected everything to program it. There was not a TA in the lab so we were not able to go through the programming. Pi then said he would handle connecting the SD card.
+
+## 4/8/2022
+Jyotsna and I met in lab to continue work on testing the SD card and found that Pi had soldered wires directly to the SD card, making it impossible to put the SD card into any sort of computer for reading it. So we were not able to test the SD card sketch as we had originally planned. Instead, we did research to determine how to integrate an SD reader into our design since Pi's design did not accommodate reading. We found that adding a micro SD card reader module would be best for our intended use case of use by a non-technical person.
+
+## 4/10/2022
+Tested dual power supply setup and found it successfully outputs 5V and -5V and ground when set up connecting the positive terminal of one to the negative terminal of the other.
+
+## 4/12/2022
+Jyotsna and I met in lab to try the SD card writing sketch again now that the SD card reader parts had arrived. We had trouble getting the program onto the ATMEGA chip, so the test was not run. 

@@ -161,4 +161,8 @@ Jyotsna and I met in lab to continue work on testing the SD card and found that 
 Tested dual power supply setup and found it successfully outputs 5V and -5V and ground when set up connecting the positive terminal of one to the negative terminal of the other.
 
 ## 4/12/2022
-Jyotsna and I met in lab to try the SD card writing sketch again now that the SD card reader parts had arrived. We had trouble getting the program onto the ATMEGA chip, so the test was not run. 
+Jyotsna and I met in lab to try the SD card writing sketch again now that the SD card reader parts had arrived. We had trouble getting the program onto the ATMEGA chip, so the test was not run.
+
+I met with Amr today to give updates on the project progress. Jyotsna continued working in lab and Piyush is travelling but he should be making the beginning of the final project report.
+
+Later I rejoined Jyotsna in the lab and found some errors in the connection so we were able to successfully run the SD card test. We were able to successfully write to the SD card with the ATMEGA328P and then read the correct data from our laptops.

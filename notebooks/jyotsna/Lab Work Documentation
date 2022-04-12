@@ -6,7 +6,18 @@ Concluded that current system that was setup [ SD card is soldered to headers, a
 Decided instead that we would need an SD card reader, so that we may eject SD card from microcontroller board and insert into PCs. 
 
 April 10, 2022:
+[with Keerat]
 Received the power supplies we had ordered, and tested the method we had learned from online [insert resource here] that
 allows us to get both positive and negative voltage for our application/ICs. Confirmed that we can +5 and - 5 out of the power supplies, 
 will test it this coming week on our actual circuit.
 
+April 12, 2022:
+[with Keerat]
+Worked on SD card reading. There were some initial problems with the Atmega cirucit: it's connection to the crystal oscillator case was incorrect 
+[ XTAL1 was  not grounded, XTAL2 was unused, this is not how it is supposed to be], and through some error in disassembling Piyush's original wiring up of the Atmega circuit , 
+we messed up the crystal connection. RESET pin [pin 1] also needed to be pulled high using a resistor [ it was connected directly to VCC by me ]. Zadig did not work as intended,
+but using "Program using Programmer" combined with selecting a COM port made programmer easy/possible to use. 
+MicroSD card module was then connected; microSD card was formatted and then used with adapter/module. Test circuit of connection to microSD card works: "Testing 1,2,3" appears
+in a file named TEST on the microSD card. 
+
+Will work in next lab session to read signals from the demodulator. 

@@ -21,3 +21,12 @@ MicroSD card module was then connected; microSD card was formatted and then used
 in a file named TEST on the microSD card. 
 
 Will work in next lab session to read signals from the demodulator. 
+
+April 16, 2022:
+[with Keerat]
+
+Tested the first soldered Sensor Board [soldered by Keerat], and found that the output of the demodulator was not at all what was expected. The demodulator chip simply was 
+not responding to input from the instrumentation amplifier. Tried to find the issue by checking continuity between joints and found that joints were connected thoroughly. 
+All resistors and capacitors were also verified to be soldered on well to the best of our knowledge. Rebuilt the cicrcuit form the PCB onto breadboard to double check PCB
+circuit functionality, and saw that everything was working as expected. Decided to solder a new sensor board, got halfway through. Keerat will retouch solder on originally 
+soldered sensor board PCB and retest behavior; hopefully this will resolve our issue. 

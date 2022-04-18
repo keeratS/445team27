@@ -175,8 +175,12 @@ Went into lab with Jyotsna. Found that newly soldered sensor board was not perfo
 
 ## 4/17/2022
 Went into lab again to address the sensor board PCB problem. Went point by point to see at what point the PCB circuit and the breadboard circuit differed. Found the disconnect in the instrumentation amplifier chip, and found that I had soldered an op-amp in instead. Fixed that, and saw the expected behavior from the fixed PCB. Problem solved!
+
+
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/67193144629__697EE1FC-7D2E-4903-9944-2EFBC258B2AA.jpg?raw=true" style="height:200px"/>
 
  I also completed soldering of microcontroller board. I connected it to the power supply and took oscilloscope readings of the waveform generator chips. Foudn that both of them generated a triangle-like waveform, which is not what we need. Was not able to investigate further as it was late into the night.
+ 
+ 
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/IMG_3948.jpg?raw=true" style="height:200px"/>
 

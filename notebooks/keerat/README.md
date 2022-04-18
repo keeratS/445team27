@@ -166,3 +166,17 @@ Jyotsna and I met in lab to try the SD card writing sketch again now that the SD
 I met with Amr today to give updates on the project progress. Jyotsna continued working in lab and Piyush is travelling but he should be making the beginning of the final project report.
 
 Later I rejoined Jyotsna in the lab and found some errors in the connection so we were able to successfully run the SD card test. We were able to successfully write to the SD card with the ATMEGA328P and then read the correct data from our laptops.
+
+## 4/15/2022
+Went into lab to solder one sensor board. Finished soldering but didn't get a chance to test to confirm the soldering went well.
+
+## 4/16/2022
+Went into lab with Jyotsna. Found that newly soldered sensor board was not performing as expected: it should have behavior matching our breadboard experiements, specifically, a sinusoidal waveform out of the instrumentation amplifier that changes amplitude in response to changes in the tube occupancy, which goes into the demodulator chip and filters, after which the signal increases and decreases proportionally to the change in the earlier waveform. Instead of that expected behavior, we saw no waveform out of the instrumentation amplifier. Tried some troubleshooting technicques with no luck. Duplicated the PCB circuit on a breadboard to be able to probe more points to find the problem, but that circuit behaved as expected. Jyotsna wrote code for the microcontroller board, but that needed the sensor board to generate data so we didn't get a chance to test that either.
+
+## 4/17/2022
+Went into lab again to address the sensor board PCB problem. Went point by point to see at what point the PCB circuit and the breadboard circuit differed. Found the disconnect in the instrumentation amplifier chip, and found that I had soldered an op-amp in instead. Fixed that, and saw the expected behavior from the fixed PCB. Problem solved!
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/67193144629__697EE1FC-7D2E-4903-9944-2EFBC258B2AA.jpg?raw=true" style="height:200px"/>
+
+ I also completed soldering of microcontroller board. I connected it to the power supply and took oscilloscope readings of the waveform generator chips. Foudn that both of them generated a triangle-like waveform, which is not what we need. Was not able to investigate further as it was late into the night.
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/IMG_3948.jpg?raw=true" style="height:200px"/>
+

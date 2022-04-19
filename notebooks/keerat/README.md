@@ -194,3 +194,6 @@ At this point, we saw that the sinusoidal output was fine, but the square output
 
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/slew_opamp_419.jpg?raw=true" style="height:200px"/>
 
+After this point we replaced the 741 op amps with HA2515 op amps which have a high slew rate and saw that the square wave was properly amplified. At this point we noticed that the generated sin and square wave had a difference in freqency of about 10 KHz. We connected the generated waveforms to the rest of the system (square wave to demodulator reference and sin wave to center ring of capacitor sensor) and connected the outer rings to the sensor board, and found that the output of the demodulator followed the waveform from the sensor, as shown in the picture. Since this is the necessary behavior of the system, we decided not to address the difference in generated waveform frequency.
+
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/success_boards_419.jpg?raw=true" style="height:200px"/>

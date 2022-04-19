@@ -190,4 +190,7 @@ Went into lab again to troubleshoot the waveform generator PCB issue. Duplicated
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/bb_max038_0419.jpg?raw=true" style="height:200px"/>
 
 Pi joined me in lab at this point. We found that the issue was not in the waveform generator setup but in the summing amplifiers on the PCB. I did the calculation to figure out which resistors would be correct for our gain of 2x and Pi soldered the resistors into the PCB.
+At this point, we saw that the sinusoidal output was fine, but the square output resembled a triangle wave. We confirmed (as seen in the picture) that the input (bottom waveform) to the amplifier was correct, but the output (top waveform) was wrong. I looked into what could cause the problem and found that the 741 op amp we were using has a low slew rate, which means that it is not able to change otuput fast enough to create a square wave output, causing a rectangular waveform to become trapezoidal. In our case, the effect was so strong it looked triangular. I found a substitutable part (same pinout but hi slew capability) available at the electronic services shop).
+
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/slew_opamp_419.jpg?raw=true" style="height:200px"/>
 

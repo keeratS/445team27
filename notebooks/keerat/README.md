@@ -184,3 +184,10 @@ Went into lab again to address the sensor board PCB problem. Went point by point
  
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/IMG_3948.jpg?raw=true" style="height:200px"/>
 
+## 4/19/2022
+Went into lab again to troubleshoot the waveform generator PCB issue. Duplicated the circuit on a breadboard to find issues, but found that the breadboard circuit worked fine, as in picture below.
+
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/bb_max038_0419.jpg?raw=true" style="height:200px"/>
+
+Pi joined me in lab at this point. We found that the issue was not in the waveform generator setup but in the summing amplifiers on the PCB. I did the calculation to figure out which resistors would be correct for our gain of 2x and Pi soldered the resistors into the PCB.
+

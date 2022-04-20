@@ -199,3 +199,8 @@ After this we replaced the 741 op amps with HA2515 op amps which have a high sle
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/keerat/success_boards_419.jpg?raw=true" style="height:200px"/>
 
 Then Piyush implemented a +3 summing amplifier to the output of the demodulator so that the signal would definitely be within the range of the ATMEGA inputs. This was implemented on a breadboard because it was not originally included in the PCB, even though it was planned. We hope to create another PCB with this component. We added this to the output of the above circuit setup and found that it behaved as expected.
+
+## 4/20/2022
+I went to lab in the morning with Jyotsna and we found that the ATMEGA circuitry on the PCB was flawed. We created the circuit we needed on a breadboard and began testing code with that. We found that it successfully took measurements from the PCB data and put that data on the SD card. I also soldered another sensor board (now 2/3 sensor boards complete) and verified that it worked as expected. Then we took a break for lunch.
+
+After lunch I went back to lab and continued to refine the code.

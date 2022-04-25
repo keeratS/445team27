@@ -205,7 +205,7 @@ I went to lab in the morning with Jyotsna and we found that the ATMEGA circuitry
 
 After lunch I went back to lab and continued to refine the code.
 
-## 4/22/2022
+## 4/21/2022
 I went into lab in the morning and began assembling the electronics on the bee house. I began by disassembling the tube and soldering the inner tube connector to the necessary wires. Then I connected the outer tube connector to the necessary wires, and color coded the wires to their purpose so that they would be recognizable while outside of the connector. Jyotsna and Pi joined later and worked on soldering the last sensor PCB and figuring out an issue where the SD card was not being written to in the loop portion of the ATMEGA code. At this point, Amr joined myself and the rest of my group in 445 lab for our mock demo. Then I finished soldering the final sensor PCB and attached the 3 sensor PCBs to the bee house. I then attached the signal wires from within the tube to their input connections on their respective PCBs. After this, I connected the rest of the setup to the PCBs and confirmed all the connections were successful and the system worked as expected. 
 
 ## 4/24/2022

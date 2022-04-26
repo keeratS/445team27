@@ -21,14 +21,15 @@ sen2=[]
 sen3=[]
 
 # populate lists with data from csv file
+# make sure data is being read as numbers and not strings
 with open("D:\SEN3.TXT") as File:
   beedata = csv.reader(File, delimiter = ',')
 
   for row in beedata:
-    time.append(row[0])
-    sen1.append(row[1])
-    sen2.append(row[2])
-    sen3.append(row[3])
+    time.append(int(row[0]))
+    sen1.append(int(row[1]))
+    sen2.append(int(row[2]))
+    sen3.append(int(row[3]))
 
 #make picture
 fig = px.line(title='Measured activity within tube')

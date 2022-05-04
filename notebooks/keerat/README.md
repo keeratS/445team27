@@ -220,3 +220,13 @@ I went to lab and modified the Arduino code to take readings from 3 sensors and 
 
 ## 4/26/2022
 I found a bug in the code where it was reading from the csv on the SD card in a string format, which caused measurements to be displayed in the wrong order. So I changed the code to take inputs as an integer, and updated it, which fixed the issue. 
+
+## 5/1/2022
+I added to the display.py script so that in addition to simply visualizing the continous data, the script also did some statistical analysis to identify potential points of interest that could reflect an entry or exit motion at the specified sensor. Process as follows:
+1. apply rolling average with overlapping windows to the data to smooth out any irregular behavior that is only captured in 1 data point. Assume that is noise.
+2. calculate the median of each sensor reading based on the data from the above step. Disregard the first couple data points in the median calculation because they are always at max voltage.
+3. identify points inthe data where the sensor readings cross the median.
+4. determine whether there is a pattern of being above the median for some time, then crossing, and being below the median (ie we are looking for _/¯ or  ¯\_ )
+5. If the above condition is met, mark that point in the data with a circle. Circles are color coded based on whether it is a negative followed by a positive or a positive followed by a negative.
+
+Also changed colors of generated visual for better readability.

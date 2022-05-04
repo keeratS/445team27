@@ -7,7 +7,7 @@ We decided we would use 8 mm id tubes, and 4 tubes vertically stacked. We were t
 
 I created CAD files for the bee house in SolidWorks, and Keerat added the capacitor setup.
 
-![alt text](https://github.com/keeratS/445team27/tree/main/notebooks/piyush/bee_house_cad.jpg?raw=true)
+![image](https://github.com/keeratS/445team27/tree/main/notebooks/piyush/bee_house_cad.jpg?raw=true)
 
 2/18/2022
 

@@ -32,7 +32,7 @@ what the voltage summer outputted. I will debug some more in office hours later.
 
 ## 3/8/22
 
-Designed part of the PCB for the circuit. Designed the schematic and PCB for the AC bridge circuit, instrumentation amplifier,
+I designed part of the PCB for the circuit. I designed the schematic and PCB for the AC bridge circuit, instrumentation amplifier,
 balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked
 on the part of the PCB for the microcontroller and waveform generator. Eventually, we decided to split the design into two
 boards, a microcontroller board and a sensor board. Here is the schematic and PCB for the sensor board V1:
@@ -42,7 +42,7 @@ boards, a microcontroller board and a sensor board. Here is the schematic and PC
 
 ## 3/23/22
 
-Prototyped the balanced demodulator in the lab on a breadboard with just a sine waveform (instead of a DC signal modulated with a sine). 
+I prototyped the balanced demodulator in the lab on a breadboard with just a sine waveform (instead of a DC signal modulated with a sine). 
 The output should be a rectified sine wave, but instead I got two sine waves, one offset from the other by a phase of around 100 degrees. Not sure why.
 
 <img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_circuit.jpg?raw=true" style="height: 200px"/>
@@ -51,30 +51,35 @@ The output should be a rectified sine wave, but instead I got two sine waves, on
 
 ## 3/28/22 - 3/29/22 
 
-Designed PCB V2 for microcontroller board. Researched the difference between an oscillator and a crystal, figured out that ECS-100AX
-which we had was an oscillator, not a crystal. An oscillator needs to be powered, and it is an active device. On the other hand,
-a crystal alone cannot provide a clock for a microcontroller - it also needs external capacitors as well as an oscillator
-circuit. Submitted gerber files to PCBway and it passed the audit.
+I designed the V2 of the PCB for the microcontroller board. I researched the difference between an oscillator and a crystal,
+and figured out that ECS-100AX which we had was an oscillator, not a crystal. An oscillator needs to be powered, and it is
+an active device. On the other hand, a crystal alone cannot provide a clock for a microcontroller - it also needs external
+capacitors as well as an oscillator circuit. I also submitted gerber files to PCBway and it passed the audit.
 
 <img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/oscillator_vs_crystal.png?raw=true" style="height: 200px"/>
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_circuit.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/microcontroller_board_schematic_V2?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/microcontroller_board_PCB_V2?raw=true" style="height: 200px"/>
 
 ## 4/4/22 
 
-Verified that I was able to program the atmega with an external oscillator.
+Verified that I was able to program the atmega with an external oscillator (uploaded a blink sketch).
+
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/ATmega_external_oscillator.jpg?raw=true" style="height: 200px"/>
 
 ## 4/7/22 
 
-Soldered and wired up the SD card to the ATMega. Also found a tutorial on how to wire up and code the SD card. 
+I soldered and wired up the SD card to the ATMega. I also found a tutorial on how to wire up and code the SD card. 
 
 ## 4/10/22 
 
-Worked on the final report. Looked at final report guidelines and template. Created cover page and downloaded
-final report LaTex template. Copied over some information from design document and wrote abstract.
+I worked on the final report. I looked at final report guidelines and template, created a cover page, and downloaded
+the final report LaTex template. I copied over some information from our design document and wrote the abstract. I realized
+that I shouldn't have soldered headers to the SD card since we needed to plug it in to a user's computer - as a result, 
+we bought a new SD card connector and SD card with a micro-SD card adapter.
 
 ## 4/12/22
 
-Worked more on the final report. Moved block diagram to introduction, modified design section as per final 
+I worked some more on the final report. I moved the block diagram to the introduction, and modified the design section as per final 
 report guidelines.
 
 ## 4/19/22
@@ -87,9 +92,44 @@ microcontroller can read. So, we constructed this non-inverting summing amplifie
 verifying that it showed the intended double pulse waveform on the oscilliscope, shifted up by 3V so that it was
 always positive.
 
-
-
 ## 4/20/22
 
-Designed a small PCB to include the summing amplifier to boost the output of the balanced demodulator to a positive 
+I designed a small PCB to include the summing amplifier to boost the output of the balanced demodulator to a positive 
 voltage readable by the microcontroller.
+
+## 4/23/22 - 4/25/22
+
+I helped debug the PCB. For some reason, the ATmega microcontroller was working fine on the breadboard but was not being programmed 
+on the PCB in the exact same configuration. We tried to use a heat gun, solder wick, and a desoldering pump to remove it, but with
+little success. Eventually, we decided to solder all of the components onto an entirely new PCB, since we had at least 2 counts of all 
+of the components on hand (except the uA741 op-amps, which we had to get from the services shop). Lesson learned - do not use a through 
+hole microcontroller on a PCB if you want to desolder it. After much debugging, we finally got all of the components working on the PCB.
+Jyotsna and I talked to Glen about some last minute PCB mounting and a stand for the bee house. We realized that the SD card connector 
+was hardwired to the wrong pin on the PCB, which is why it wasn't being written to correctly - luckily, we had broken out all spare pins 
+on the PCB, so we were able to connect the SD card to a different pin. Just in time for the demo, we confirmed that our entire system 
+worked as expected.
+
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/microcontroller_board_debugging.jpg?raw=true" style="height: 200px"/>
+
+
+## 5/2/22
+
+I helped create the final presentation and practiced presenting.
+
+## 5/2/22 - 5/4/22
+
+I helped record the final project video along with Keerat and Jyotsna. I learned how to use Davinci Resolve for video editing,
+and edited the video. 
+
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/video_editing.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/bee_house.jpg?raw=true" style="height: 200px"/>
+
+
+5/4/22 - 5/5/22
+
+I worked on the final report, along with Jyotsna and Keerat. I wrote the introduction, design overview, some design details, and 
+the conclusion section. I also wrote some equations in latex, proofread the paper for grammar/spelling errors, and modified the 
+section about the balanced demodulator after obtaining a better understanding of how it works. I was under the impression that it
+only outputs the modulated DC signal, and its only function is to reduce the noise of the modulated signal. However, it does 
+both - it demodulates the signal and removes noise.
+

@@ -1,64 +1,83 @@
-2/8/2022
+## 2/8/2022
 
 Talked to machine shop about physical design of the bee house, including dimensions, number of tubes and where they would go.
 We decided we would use 8 mm id tubes, and 4 tubes vertically stacked. We were told to come back once we knew what specific materials we wanted.
 
-2/10/2022
+## 2/10/2022
 
 I created CAD files for the bee house in SolidWorks, and Keerat added the capacitor setup.
 
-![image](https://github.com/keeratS/445team27/tree/main/notebooks/piyush/bee_house_cad.jpg?raw=true)
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/bee_house_cad.jpg?raw=true" style="height: 200px"/>
 
-2/18/2022
+## 2/18/2022
 
 I did the circuit analysis for the first two parts of the circuit (AC bridge and instrumentation amplifier).
 
-2/19/2022
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/circuit_analysis.png?raw=true" style="height: 200px"/>
+
+## 2/19/2022
 
 We built a circuit for prototyping a very basic version of the capacitance detector on a breadboard.
 
-2/26/2022
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/breadboard_AC_bridge.jpg?raw=true" style="height: 200px"/>
 
-I prototyped a voltage summer circuit on a breadboard to add a DC offset to the output voltage to ensure that it is in 
+## 2/26/2022
+
+I prototyped a voltage adder circuit on a breadboard to add a DC offset to the output voltage to ensure that it is in 
 a range that is readable by the microcontroller, since the output voltage can be negative and the microcontroller only 
 reads voltages between 0.5 and 5V. The experiment was unsuccessful because the sum of the two voltages did not match 
 what the voltage summer outputted. I will debug some more in office hours later.
 
-3/8/22
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/summing_amplifier_research.jpg?raw=true" style="height: 200px"/>
+
+## 3/8/22
 
 Designed part of the PCB for the circuit. Designed the schematic and PCB for the AC bridge circuit, instrumentation amplifier,
 balanced demodulator, and output amplifier and summing amplifier for adding a DC offset to the output. Jyotsna and Keerat worked
-on the part of the PCB for the microcontroller and waveform generator.
+on the part of the PCB for the microcontroller and waveform generator. Eventually, we decided to split the design into two
+boards, a microcontroller board and a sensor board. Here is the schematic and PCB for the sensor board V1:
 
-3/23/22
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/sensor_board_schematic_V1.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/sensor_board_PCB_V1.png?raw=true" style="height: 200px"/>
+
+## 3/23/22
 
 Prototyped the balanced demodulator in the lab on a breadboard with just a sine waveform (instead of a DC signal modulated with a sine). 
 The output should be a rectified sine wave, but instead I got two sine waves, one offset from the other by a phase of around 100 degrees. Not sure why.
 
-3/28/22 - 3/29/22 
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_circuit.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_output.jpg?raw=true" style="height: 200px"/>
+
+
+## 3/28/22 - 3/29/22 
 
 Designed PCB V2 for microcontroller board. Researched the difference between an oscillator and a crystal, figured out that ECS-100AX
-which we had was an oscillator, not a crystal. Submitted gerber files to PCBway and it passed the audit.
+which we had was an oscillator, not a crystal. An oscillator needs to be powered, and it is an active device. On the other hand,
+a crystal alone cannot provide a clock for a microcontroller - it also needs external capacitors as well as an oscillator
+circuit. Submitted gerber files to PCBway and it passed the audit.
 
-4/4/22 
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/oscillator_vs_crystal.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_circuit.jpg?raw=true" style="height: 200px"/>
+
+## 4/4/22 
 
 Verified that I was able to program the atmega with an external oscillator.
 
-4/7/22 
+## 4/7/22 
 
 Soldered and wired up the SD card to the ATMega. Also found a tutorial on how to wire up and code the SD card. 
 
-4/10/22 
+## 4/10/22 
 
 Worked on the final report. Looked at final report guidelines and template. Created cover page and downloaded
 final report LaTex template. Copied over some information from design document and wrote abstract.
 
-4/12/22
+## 4/12/22
 
 Worked more on the final report. Moved block diagram to introduction, modified design section as per final 
 report guidelines.
 
-4/19/22
+## 4/19/22
 
 Debugged PCB V2 in the lab with Keerat. When testing the waveform generator, we found that the issue was that
 we were probing the output of the operational amplifier, whose resistors were not soldered yet. Once we fixed that,
@@ -68,7 +87,9 @@ microcontroller can read. So, we constructed this non-inverting summing amplifie
 verifying that it showed the intended double pulse waveform on the oscilliscope, shifted up by 3V so that it was
 always positive.
 
-4/20/22
+
+
+## 4/20/22
 
 Designed a small PCB to include the summing amplifier to boost the output of the balanced demodulator to a positive 
 voltage readable by the microcontroller.

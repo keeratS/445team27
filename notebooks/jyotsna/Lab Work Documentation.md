@@ -17,17 +17,17 @@ We set up the arms of the AC bridge with different capacitor values by combining
 Drove AC bridge with 33 kHz sine waveform to mimic how system will work when we have our sensors in hand. Tried to collect data by simulating
 a bee passing through by unbalancng the circuit as described in the previous few sentences. 
 
-Data collecting procedure as follows: [this passage is the same as my partner Keerat's, as we conducted these tests together]
+Data collecting procedure as follows: (this passage is the same as my partner Keerat's, as we conducted these tests together)
 
-    -Turn off power supply and waveform generator outputs. Wait a few seconds. Adjust the parallel capacitor arm to contain the desired amount of capacitors.
-    -Turn on the power supply and the waveform generator output.
-    -If bee passage should be simulated, press button to include parallel capacitor arm in circuit.
-    -Enable "measure"  on oscilloscope.
-    -Wait 5 seconds to allow mean value to be calculated [this was done so we could get a steady value 
-                                                         as the signal seemed a little jumpy, system seemed susceptible to noise]
-    -Write down the mean amplitude measured by the oscilloscope.
-    -Repeat steps 1-4.
-    -Write down the "current" measured value of the amplitude measured by the oscilloscope. If the number is changing, use the number that shows up for the most time.
+- Turn off power supply and waveform generator outputs. Wait a few seconds. Adjust the parallel capacitor arm to contain the desired amount of capacitors.
+- Turn on the power supply and the waveform generator output.
+- If bee passage should be simulated, press button to include parallel capacitor arm in circuit.
+- Enable "measure"  on oscilloscope.
+- Wait 5 seconds to allow mean value to be calculated (this was done so we could get a steady value 
+                                                     as the signal seemed a little jumpy, system seemed susceptible to noise)
+- Write down the mean amplitude measured by the oscilloscope.
+- Repeat steps 1-4.
+- Write down the "current" measured value of the amplitude measured by the oscilloscope. If the number is changing, use the number that shows up for the most time.
 
 Please find the data collected in this repo: the figure is named AC_data_collection_2_19_2022.png
 
@@ -48,10 +48,10 @@ we could add visual indicators to the beekeepers that action is needed on their 
 block diagram more clear, as I had forgotten to add a legend; I think I will add some captions by the arrows to clarify their roles as well. 
 
 General feedback included:
-    -no need for seperate processor to perform data analysis, could do it al on ATMega
-    -could do copper tape instead of copper rings to make sensors; could help in making sensor profiles smaller
-    -visual indicator for beekeper to take action, like LEDs
-    -there could be off the shelf components we could use to do wat our capacitance sensors could do
+- no need for seperate processor to perform data analysis, could do it al on ATMega
+- could do copper tape instead of copper rings to make sensors; could help in making sensor profiles smaller
+- visual indicator for beekeper to take action, like LEDs
+- there could be off the shelf components we could use to do wat our capacitance sensors could do
 
 Feb 22, 2022:
 Weekly Meeting with Amr, reported on our progress this week. Discussed making only one or two tunnels to save on cost, as parts seem to be quite expensive, and
@@ -71,9 +71,26 @@ it seemed that this method would anyways not generate a 33 kHz signal in the way
 
 Main source of information: https://www.arduino.cc/en/pmwiki.php?n=Tutorial/SecretsOfArduinoPWM
 More sources were consulted but they were more like forum posts.
- 
+
+Feb 27th, 2022:
+Keerat and I went into lab to debug our prototyping circuit, as she had previously sen some weird behavior in the AC bridge circuitry. Balanced and unbalanced circuitry / input into the AC bridge generated the same constant 5 V output from the Instrumentation Amplifier we had constructed out of three opamps. We simply are simply stumped by this behavior. Did some reading on how and why instrumentation amplifiers work; really realizing that I am reaching the depth of my EE knowledge, so am working hard to get a better understandind of the inner workings of this component. 
+
+We decided we would need Amr's help in understanding what is going on, so we emailed him.
+
+Feb 28th, 2022: 
+Attended our Design Document Review: in attendance were Prf Victoria Shao, Amr, and three of our peers from class. Feedback on design had been addressed previously in our design document check, so there was not much discussion on the design choices today. Our third groupmate was not at this review. 
+
 March 1, 2022:
-Worked on microcontroller board for PCB draft 1 due date. 
+Eventful day ! 
+
+Met Amr for weekly meeting, and asked him our questions from the wonky behavior of our test circuit.
+Was in some talks with the Machine Shop as work on our Bee House has begun. 
+
+Attended the PCB design review meeting and met Dean. He had some excellent advice on what to do for our PCBs, especially as we are not yet sure 
+how the system will come together in the end. We decided we will lead our ATMEGA pins onto header pins for maximum design flexibility. Deciede to also use external oscillator component for our ATMega.
+
+March 7, 2022:
+Worked with Keerat to create the microcontroller board for the draft 1 deadline. We think this board will not be used in the final integration, as many things in our design are still coming together and our understanding of the waveform generating chips and the ATmega will probably evolve between now and final build. 
 
 Thursday before spring break
 in discussions with glen about tunnels

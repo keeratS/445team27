@@ -1,4 +1,34 @@
 Lab Work Documentation
+Feb 21, 2022:
+Researched what the dielectric constant of bees could be, found a research paper at https://etda.libraries.psu.edu/files/final_submissions/18863,
+by Omar Alzaabi at Penn State Univeristy, were he has conducted studies into the properties of airborne insects using radar. By observing how the presence of the insects
+interacts with the emitted radar, Alazaabi concludes the dielectric constant value of a honey bee is about 10. Using this value as a guideline, further 
+research led me to find that glass has the closet dielectric value to 10. 
+
+
+
+Thursday before spring break
+in discussions with glen about tunnels
+
+Friday before spring break
+soldered wires onto the rings machined by Glen
+Assembled prototype tunnel
+checked continutity from sensor to wire connection, all passed
+
+Thursday of Spring Break
+bought beads
+
+March 20, 2022:
+Connected the prototype tunnel to the instrumentation amplifier, sucessfully saw change in amplitude from the output of the instrumentation amplifier when a glass bead
+was passed through the sensor
+
+
+
+March 21, 2022:
+Delivered sensor rings with wires attached back to Glen so that they could be mmounted inside the tunnel.
+
+April 7, 2022:
+Picked up Mason Bee House structure from Machine Shop
 
 April 8, 2022:
 Was in lab for about 1.5 hours; worked with Keerat on getting Atmega328 up and running on our laptops based on work Piyush had done. 
@@ -30,3 +60,19 @@ not responding to input from the instrumentation amplifier. Tried to find the is
 All resistors and capacitors were also verified to be soldered on well to the best of our knowledge. Rebuilt the cicrcuit form the PCB onto breadboard to double check PCB
 circuit functionality, and saw that everything was working as expected. Decided to solder a new sensor board, got halfway through. Keerat will retouch solder on originally 
 soldered sensor board PCB and retest behavior; hopefully this will resolve our issue. 
+
+Update from the future: retouching solder joints worked
+
+Somewhere along the way:
+- learned that there are a few ways to get atmega boot up and running
+
+- created serial interception device with keerat and her arduino to get serial monitor output. helped a little in debugging our sd card issue
+
+- sd card issue
+
+
+April 25th, 2022:
+Big Assembly Day, big problem solving day
+April 26th, 2022:
+Finished final integration of device
+Demo

@@ -148,20 +148,27 @@ soldered sensor board PCB and retest behavior; hopefully this will resolve our i
 
 Update from the future: retouching solder joints worked
 
-Somewhere along the way:
-- learned that there are a few ways to get atmega boot up and running
-
-- created serial interception device with keerat and her arduino to get serial monitor output. helped a little in debugging our sd card issue
-
-- sd card issue
-
-
 ## April 25th, 2022:
 Big Assembly Day, big problem solving day
 
 A lot of things came to  a head today. I consulted with Glen about a cover for the sensor boards on the side of the house; while he could not make a cover in time, he made us a good mount for our electronics. We put this on and re-affixed the sensor boards to the mount.
 
-I also consulted with the Electronics Services Shop about the design from crimped wires that split. 
+I also consulted with the Electronics Services Shop about the design for wire crimping, and made splitter wires to deliver power to all four boards. 
+
+Realized the ATMEGA on the microcontroller board was not programming bc the bootloader on it had been wiped. So it was bricked. Tried for a while to desolder it off the board, but this proved to be a challenge for some reason. So, at 10 pm, I began soldering a new microcontroller , and passed the rest off to Piyush.
+
+Then tested the code Keerat had written on breadboarded ATMega, and when that worked, finally connected the atmega to the rest of the system. It was the first time that everything fit together and worked, but we still need to integrate the final microcontroller board.
+
 ## April 26th, 2022:
-Finished final integration of device
-Demo
+Finished final integration of device as overnight, Pi soldered the microcontroller board.
+Demoed today, bringing us to the conclusion of the course
+
+
+## Some Stuff That I Did, but forgot when I did it, so tacking it onto the end:
+
+Somewhere along the way:
+- learned that there are a few ways to get atmega boot up and running, and that the way that we had orginally set up atmega was no problem when powered properly and when the bootloader had not been wiped off.
+
+- created serial interception device with keerat and her arduino to get serial monitor output. Helped a little in debugging our sd card issue but the issue overall with the sd card was with the library.
+
+- sd card issue: we learned that the sd card library that comes prebuilt in the Arduino IDE is a wrapper onto the SDFat Library hosted somewhere else on Github. This SDFat library is actually not maintained by Arduino and so has its own new developements and etc. From scrounging on forums for 5 days, we learnt many different tricks and hacks that finally combined to give us access to write to our SD card. This was a giant sink in our time, and I credit a lack of documentation to increasing our debugging time.

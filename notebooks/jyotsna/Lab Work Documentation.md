@@ -54,12 +54,26 @@ General feedback included:
     -there could be off the shelf components we could use to do wat our capacitance sensors could do
 
 Feb 22, 2022:
-Weekly Meeting with Amr, reported on our progress this week. Discussed making only one tunnel to save on cost, as parts seem to be quite expensive, and
-we have only $150 in course provided budget. We spoke that this will be aceptable for demo.  
+Weekly Meeting with Amr, reported on our progress this week. Discussed making only one or two tunnels to save on cost, as parts seem to be quite expensive, and
+we have only $150 in course provided budget. We spoke that this will be aceptable for demo. Our meeting focused a 
+bit more this time on writing the design documents, and discussed best practices and points for imporovement based on the check. 
 
 Feb 24th, 2022:
 Made the block diagram better, final version we used in our design document check can be seen in this repo under the name block_diagram_DDC.png
+Spent today writing and finishing the Design Document 
 
+Feb 25th, 2022:
+Keerat and I met today to find a wave to generate the waveforms [ 33kHz sine and square waves] needed for our applications. Our original plan was to use the 
+ATMega to generate these signals from its PWM digital out pins, but I found from online resources that manipulating this waveform more finely can be difficult
+with the ATMega. It seems to be easy to change values like the duty cycle, as the PWM / digital IO library has functions to help users do that, but changing 
+the frquency needs lower level code to manipulate the clock and timer registers in the ATMega328P. Forums didn't have much good guidance on how to do this, and
+it seemed that this method would anyways not generate a 33 kHz signal in the way we envisoned. 
+
+Main source of information: https://www.arduino.cc/en/pmwiki.php?n=Tutorial/SecretsOfArduinoPWM
+More sources were consulted but they were more like forum posts.
+ 
+March 1, 2022:
+Worked on microcontroller board for PCB draft 1 due date. 
 
 Thursday before spring break
 in discussions with glen about tunnels

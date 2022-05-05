@@ -98,7 +98,7 @@ I designed a small PCB to include the summing amplifier to boost the output of t
 voltage readable by the microcontroller.
 
 <img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/voltage_adder_schematic.png?raw=true" style="height: 400px"/>
-<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/voltage_adder_PCB.jpg?raw=true" style="height: 400px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/voltage_adder_PCB.png?raw=true" style="height: 400px"/>
 
 ## 4/23/22 - 4/25/22
 

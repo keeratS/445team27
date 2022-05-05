@@ -1,4 +1,5 @@
 Lab Work Documentation
+
 Feb 8, 2022:
 Visited the Machine Shop to discuss our physical design needs for this semester. Explained our project to Gregg and received some feedback 
 about tunnel sizing. Will be looking into suitable materials for tunnel and bee simulation. Currently thinking to go with spherical
@@ -28,7 +29,7 @@ Data collecting procedure as follows: [this passage is the same as my partner Ke
     -Repeat steps 1-4.
     -Write down the "current" measured value of the amplitude measured by the oscilloscope. If the number is changing, use the number that shows up for the most time.
 
-Please find the data collected in this repo: the figure is named AC_data_collection_2_19_2022.jpg
+Please find the data collected in this repo: the figure is named AC_data_collection_2_19_2022.png
 
 Feb 21, 2022:
 Researched what the dielectric constant of bees could be, found a research paper at https://etda.libraries.psu.edu/files/final_submissions/18863,
@@ -36,6 +37,28 @@ by Omar Alzaabi at Penn State Univeristy, were he has conducted studies into the
 interacts with the emitted radar, Alazaabi concludes the dielectric constant value of a honey bee is about 10. Using this value as a guideline, further 
 research led me to find that glass has the closet dielectric value to 10. 
 
+Feb 20th, 2022:
+Worked on creating the design document for our design document check. Worked on creating the block diagram for our system as we understand at this time.
+Created requirements and verification tables and content. 
+
+Feb 21, 2022:
+
+We attended our design document check. Prf Victoria Shao, and TAs Amr, David, and Evan were in attendance. We received some feedback, namely that
+we could add visual indicators to the beekeepers that action is needed on their part to secure their tunnels. I recevied some notes to make the 
+block diagram more clear, as I had forgotten to add a legend; I think I will add some captions by the arrows to clarify their roles as well. 
+
+General feedback included:
+    -no need for seperate processor to perform data analysis, could do it al on ATMega
+    -could do copper tape instead of copper rings to make sensors; could help in making sensor profiles smaller
+    -visual indicator for beekeper to take action, like LEDs
+    -there could be off the shelf components we could use to do wat our capacitance sensors could do
+
+Feb 22, 2022:
+Weekly Meeting with Amr, reported on our progress this week. Discussed making only one tunnel to save on cost, as parts seem to be quite expensive, and
+we have only $150 in course provided budget. We spoke that this will be aceptable for demo.  
+
+Feb 24th, 2022:
+Made the block diagram better, final version we used in our design document check can be seen in this repo under the name block_diagram_DDC.png
 
 
 Thursday before spring break
@@ -44,7 +67,7 @@ in discussions with glen about tunnels
 Friday before spring break
 soldered wires onto the rings machined by Glen
 Assembled prototype tunnel
-checked continutity from sensor to wire connection, all passed
+checked continuity from sensor to wire connection, all passed
 
 Thursday of Spring Break
 bought beads

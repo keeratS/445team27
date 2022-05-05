@@ -7,19 +7,19 @@ We decided we would use 8 mm id tubes, and 4 tubes vertically stacked. We were t
 
 I created CAD files for the bee house in SolidWorks, and Keerat added the capacitor setup.
 
-<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/bee_house_cad.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/bee_house_cad.png?raw=true" style="height: 200px"/>
 
 ## 2/18/2022
 
 I did the circuit analysis for the first two parts of the circuit (AC bridge and instrumentation amplifier).
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/circuit_analysis.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/circuit_analysis.png?raw=true" style="height: 200px"/>
 
 ## 2/19/2022
 
 We built a circuit for prototyping a very basic version of the capacitance detector on a breadboard.
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/breadboard_AC_bridge.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/breadboard_AC_bridge.jpg?raw=true" style="height: 200px"/>
 
 ## 2/26/2022
 
@@ -28,7 +28,7 @@ a range that is readable by the microcontroller, since the output voltage can be
 reads voltages between 0.5 and 5V. The experiment was unsuccessful because the sum of the two voltages did not match 
 what the voltage summer outputted. I will debug some more in office hours later.
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/summing_amplifier_research.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/summing_amplifier_research.jpg?raw=true" style="height: 200px"/>
 
 ## 3/8/22
 
@@ -37,16 +37,16 @@ balanced demodulator, and output amplifier and summing amplifier for adding a DC
 on the part of the PCB for the microcontroller and waveform generator. Eventually, we decided to split the design into two
 boards, a microcontroller board and a sensor board. Here is the schematic and PCB for the sensor board V1:
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/sensor_board_schematic_V1.png?raw=true" style="height: 200px"/>
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/sensor_board_PCB_V1.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/sensor_board_schematic_V1.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/sensor_board_PCB_V1.png?raw=true" style="height: 200px"/>
 
 ## 3/23/22
 
 I prototyped the balanced demodulator in the lab on a breadboard with just a sine waveform (instead of a DC signal modulated with a sine). 
 The output should be a rectified sine wave, but instead I got two sine waves, one offset from the other by a phase of around 100 degrees. Not sure why.
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_circuit.jpg?raw=true" style="height: 200px"/>
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/balanced_demodulator_output.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/balanced_demodulator_circuit.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/balanced_demodulator_output.jpg?raw=true" style="height: 200px"/>
 
 
 ## 3/28/22 - 3/29/22 
@@ -56,15 +56,15 @@ and figured out that ECS-100AX which we had was an oscillator, not a crystal. An
 an active device. On the other hand, a crystal alone cannot provide a clock for a microcontroller - it also needs external
 capacitors as well as an oscillator circuit. I also submitted gerber files to PCBway and it passed the audit.
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/oscillator_vs_crystal.png?raw=true" style="height: 200px"/>
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/microcontroller_board_schematic_V2?raw=true" style="height: 200px"/>
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/microcontroller_board_PCB_V2?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/oscillator_vs_crystal.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/microcontroller_board_schematic_V2?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/microcontroller_board_PCB_V2?raw=true" style="height: 200px"/>
 
 ## 4/4/22 
 
 Verified that I was able to program the atmega with an external oscillator (uploaded a blink sketch).
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/ATmega_external_oscillator.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/ATmega_external_oscillator.jpg?raw=true" style="height: 200px"/>
 
 ## 4/7/22 
 
@@ -109,7 +109,7 @@ was hardwired to the wrong pin on the PCB, which is why it wasn't being written 
 on the PCB, so we were able to connect the SD card to a different pin. Just in time for the demo, we confirmed that our entire system 
 worked as expected.
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/microcontroller_board_debugging.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/microcontroller_board_debugging.jpg?raw=true" style="height: 200px"/>
 
 
 ## 5/2/22
@@ -121,8 +121,8 @@ I helped create the final presentation and practiced presenting.
 I helped record the final project video along with Keerat and Jyotsna. I learned how to use Davinci Resolve for video editing,
 and edited the video. 
 
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/video_editing.png?raw=true" style="height: 200px"/>
-<img src="https://github.com/keeratS/445team27/tree/main/notebooks/piyush/bee_house.jpg?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/video_editing.png?raw=true" style="height: 200px"/>
+<img src="https://github.com/keeratS/445team27/blob/main/notebooks/piyush/bee_house.jpg?raw=true" style="height: 200px"/>
 
 
 5/4/22 - 5/5/22

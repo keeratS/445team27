@@ -1,4 +1,35 @@
 Lab Work Documentation
+Feb 8, 2022:
+Visited the Machine Shop to discuss our physical design needs for this semester. Explained our project to Gregg and received some feedback 
+about tunnel sizing. Will be looking into suitable materials for tunnel and bee simulation. Currently thinking to go with spherical
+metal balls, such as ball bearings, as this is what was chosen in the UEPI research paper and shown to work. 
+
+Feb 15, 2022:
+First meeting with TA Amr Ghoname; decided to start looking into other materials to simulate bee, as steel or metal might not be suitable to work
+with our sensor rings.
+
+Feb 19th, 2022:
+Headed into lab with my group mate Keerat Singh, and began to build our prototype AC bridge circuit. This is going to be the core mechanism that will make
+our detection sucessful. 
+
+We set up the arms of the AC bridge with different capacitor values by combining capacitors in series to create unequal capacitance values in the two arms. 
+Drove AC bridge with 33 kHz sine waveform to mimic how system will work when we have our sensors in hand. Tried to collect data by simulating
+a bee passing through by unbalancng the circuit as described in the previous few sentences. 
+
+Data collecting procedure as follows: [this passage is the same as my partner Keerat's, as we conducted these tests together]
+
+    -Turn off power supply and waveform generator outputs. Wait a few seconds. Adjust the parallel capacitor arm to contain the desired amount of capacitors.
+    -Turn on the power supply and the waveform generator output.
+    -If bee passage should be simulated, press button to include parallel capacitor arm in circuit.
+    -Enable "measure"  on oscilloscope.
+    -Wait 5 seconds to allow mean value to be calculated [this was done so we could get a steady value 
+                                                         as the signal seemed a little jumpy, system seemed susceptible to noise]
+    -Write down the mean amplitude measured by the oscilloscope.
+    -Repeat steps 1-4.
+    -Write down the "current" measured value of the amplitude measured by the oscilloscope. If the number is changing, use the number that shows up for the most time.
+
+Please find the data collected in this repo: the figure is named AC_data_collection_2_19_2022.jpg
+
 Feb 21, 2022:
 Researched what the dielectric constant of bees could be, found a research paper at https://etda.libraries.psu.edu/files/final_submissions/18863,
 by Omar Alzaabi at Penn State Univeristy, were he has conducted studies into the properties of airborne insects using radar. By observing how the presence of the insects

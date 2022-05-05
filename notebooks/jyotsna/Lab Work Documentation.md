@@ -158,6 +158,10 @@ Somewhere along the way:
 
 ## April 25th, 2022:
 Big Assembly Day, big problem solving day
+
+A lot of things came to  a head today. I consulted with Glen about a cover for the sensor boards on the side of the house; while he could not make a cover in time, he made us a good mount for our electronics. We put this on and re-affixed the sensor boards to the mount.
+
+I also consulted with the Electronics Services Shop about the design from crimped wires that split. 
 ## April 26th, 2022:
 Finished final integration of device
 Demo
